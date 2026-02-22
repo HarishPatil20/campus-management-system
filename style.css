@@ -1,0 +1,301 @@
+/* ===========================
+   Import Google Fonts
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* ===========================
+   Global Styles
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* ===========================
+   Header and Navigation
+=========================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    z-index: 99;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: #bccbf4;
+}
+
+header li {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #061001;
+    border-radius: 5px;
+    transform: scale(0);
+}
+
+/* ===========================
+   Container & Form Styling
+=========================== */
+.container {
+    margin: 5px;
+    margin-top: 90px;
+}
+
+.form-box, .form-box1 {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box {
+    display: none;
+}
+
+.form-box.active {
+    display: block;
+}
+
+h1, h2{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 50px; /* override h1 size for special case */
+}
+
+
+/* ===========================
+   Form Elements
+=========================== */
+input, select {
+    width: 100%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p a {
+    color: #7494ec;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Button Styles (General)
+=========================== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #7494ec;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #6884d3;
+}
+
+/* ===========================
+   Specific Button Styles
+=========================== */
+/* Logout Button */
+button.logout-btn {
+    background-color: #6e92f7;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    width: auto;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button.logout-btn:hover {
+    background-color: #5575da;
+}
+
+/* View Button */
+button.view-btn {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+button.view-btn:hover {
+    background: #45a049;
+}
+
+/* ===========================
+   Box and Text Adjustments
+=========================== */
+.box p {
+    font-size: 22px;
+}
+
+.box button {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   Error and Alert Messages
+=========================== */
+.error-message {
+    padding: 12px;
+    background: #f8d7da;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #a42834;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert::after {
+    content: "×";
+    position: absolute;
+    right: 12px;
+    top: 4px;
+    font-size: 18px;
+}
+
+/* ===========================
+   Select2 Dropdown (Hostel Search)
+=========================== */
+.select2-container--default .select2-selection--single {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    height: 40px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 28px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 38px;
+}
+
+/* ===========================
+   End of Styles
+=========================== */
+/* Styled buttons like your Delete example */
+.submit-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.red-btn {
+    background-color: #f44336; /* Red for Not Submitted */
+}
+
+.green-btn {
+    background-color: #4CAF50; /* Green for Submitted */
+}
