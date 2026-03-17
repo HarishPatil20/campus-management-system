@@ -102,6 +102,7 @@ Dbms_project/
 - Attendance Management  
 - Online Assignment Submission  
 - Role-based Dashboards  
+- Email Notifications  
 
 
 ## 🔒 Security Note
