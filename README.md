@@ -96,6 +96,11 @@ Dbms_project/
    database/clg.sql
 5. Open browser and go to:
    http://localhost/Dbms_project/
+   
+## 📌 Future Enhancements
+
+- Attendance Management  
+
 
 ## 🔒 Security Note
 
