@@ -103,6 +103,7 @@ Dbms_project/
 - Online Assignment Submission  
 - Role-based Dashboards  
 - Email Notifications  
+- PDF / Excel Export  
 
 
 ## 🔒 Security Note
