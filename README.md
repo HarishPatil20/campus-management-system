@@ -100,6 +100,7 @@ Dbms_project/
 ## 📌 Future Enhancements
 
 - Attendance Management  
+- Online Assignment Submission  
 
 
 ## 🔒 Security Note
