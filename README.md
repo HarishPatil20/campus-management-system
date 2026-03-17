@@ -104,7 +104,7 @@ Dbms_project/
 - Role-based Dashboards  
 - Email Notifications  
 - PDF / Excel Export  
-
+- Improved UI & Security
 
 ## 🔒 Security Note
 
